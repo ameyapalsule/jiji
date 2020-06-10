@@ -3,34 +3,45 @@
 <head>
     <title>Jiji Shradhanjali</title>
 	<style type="text/css">
-.image {
-  display: inline-block;
-  overflow: auto;
-  height:90%;;
-
+#header-titles{
+  width:45%;
+  text-align: center;
+  float: right;
+  background:lightcoral;
+  height:100%;
+  
+  
 }
-
-.poem {
-text-align:center;
-  display: inline-block;
-  padding-left:15px; 
-  overflow: auto;
-  position:absolute;
- 
+#header-image{
+  width:55%;
+  height:100%;
+  float: left;
+  
+}
+#dynamicImage{
+  width:100%;
+  height:100%; 
+  
 }
 	</style>
 	
 	
 <script src="https://code.jquery.com/jquery-1.9.1.js"></script>  
+<script>
+
+</script>
 
 </head>
 <body>     
-		<div style='background:lightcoral;'>		  
+			  
 
-			<div class='image'><img src="images/1.PNG" id="dynamicImage"></div>
+			
 			<audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto"  ></audio>
-
-			<div class='poem'> <h1>To Jiji with Love</h1>
+			<div class="header-image" id="header-image">
+                <img id="dynamicImage" src="images/1.PNG">
+			</div> 
+			 <div "header-titles" id="header-titles"> 
+					<h1>To Jiji with Love</h1>
 					<p>Dada and Jiji as grandparents was the best gift that we received,</p>
 					<p>Their life was full of loving deeds, thoughtful and caring for others need.</p>
 					<p>Together they were like rum and coke, a combination which never broke.</p>
@@ -46,10 +57,9 @@ text-align:center;
 					<p>The extra dosage of Vicco and Move, is now far better understood.</p>
 					<p>I am sure you are happy, now you have great grand kids who are extremely charming and peppy.</p>
 					<p>Wherever in this world your spirit may roam, our heart will always be your home.</p></br>
-					<p>-GreatPals</p>
-					</p>												
+					<p>-GreatPals</p>																	
 			</div>
-		</div>
+	
 		
 		<script type="text/javascript">
 			 $(document).ready(function() {
