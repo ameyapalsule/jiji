@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jiji Shradhanjali</title>
+	<style type="text/css">
+.image {
+  display: inline-block;
+  overflow: auto;
+  height:90%;;
+
+}
+
+.poem {
+text-align:center;
+  display: inline-block;
+  padding-left:15px;
+ 
+  overflow: auto;
+  position:absolute;
+ 
+}
+	</style>
+	
+	
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>   
+<script type="text/javascript">
+	
+// create array of image URLs
+var cards = ['images/1.png','images/2.png', 'images/3.png', 'images/4.png','images/5.png','images/6.png'];
+
+// get the image element
+//var image = document.getElementById("dynamicImage");
+
+// set the image src to a random image URL
+//image.src = cards[Math.floor(Math.random() * cards.length)];
+setInterval(fadeDivs, 10000);
+
+function fadeDivs() {
+
+    $("#dynamicImage").fadeOut(1000, function(){
+      $(this).attr('src', cards[Math.floor(Math.random() * cards.length)]).fadeIn(1000);
+    })
+   
+}
+			
+
+		
+</script>
+</head>
+<body>
+    
+		<div style='background:lightcoral;'>
+			<div class='image'><img src="images/1.png" id="dynamicImage"></div>
+			<div class='poem'> <h1>To Jiji with Love</h1>
+					<p>Dada and Jiji as grandparents was the best gift that we received,</p>
+					<p>Their life was full of loving deeds, thoughtful and caring for others need.</p>
+					<p>Together they were like rum and coke, a combination which never broke.</p>
+					<p>Jiji was full of vigor, charm and pride, when she had babu by her side,</p>
+					<p>Dada was calm and peaceful at mind, seeing Vilas and Suresh being Elon Musk of their time,</p>
+					<p>Shobha has always been the apple of an eye, a caring daughter who always stood by,</p>
+					<p>Like mother, the daughter has a spark, a true artist and painter at heart.</p>
+					<p>Jiji was known for her saris, a woman with poise and a refined choice.</p>
+					<p>Matter ki kachori, pattal bhaji or thalipit night, she always got every ingredient right.</p>
+					<p>Her love was truly unconditional even when I took away her tea-sweetener.</p>
+					<p>We had our shared interests, I offered her Parle-G for keeping my secrets.</p>
+					<p>Now that we have grown old and have tablets and medicines of our own,</p> 
+					<p>The extra dosage of Vicco and Move, is now far better understood.</p>
+					<p>I am sure you are happy, now you have great grand kids who are extremely charming and peppy.</p>
+					<p>Wherever in this world your spirit may roam, our heart will always be your home.</p></br>
+					<p>-GreatPals</p>
+					</p>												
+			</div>
+		</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
