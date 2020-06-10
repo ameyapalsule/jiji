@@ -27,19 +27,20 @@ text-align:center;
 	
 // create array of image URLs
 var cards = ['images/1.PNG','images/2.PNG', 'images/3.PNG', 'images/4.PNG','images/5.PNG','images/6.PNG'];
-
+var i =1;
 // get the image element
 //var image = document.getElementById("dynamicImage");
 
 // set the image src to a random image URL
 //image.src = cards[Math.floor(Math.random() * cards.length)];
-setInterval(fadeDivs, 10000);
+setInterval(fadeDivs, 5000);
 
-function fadeDivs() {
-
+function fadeDivs() {	
+	
     $("#dynamicImage").fadeOut(1000, function(){
-      $(this).attr('src', cards[Math.floor(Math.random() * cards.length)]).fadeIn(1000);
-    })
+      $(this).attr('src', cards[i%6]).fadeIn(1000);
+    });
+    i++;		
    
 }
 			
